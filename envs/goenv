@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export GOPRIVATE=###GOPRIVATE###
+export GOPROXY=###GOPROXY###  // 'https://goproxy.cn|direct'
+export GO111MODULE='on'

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+generate_uid() {
+  local length=${1:-10}
+  local valid_chars='a-zA-Z0-9_.'
+
+  if [[ $length =~ ^[0-9]+$ ]]; then
+    tr -dc "$valid_chars" < /dev/urandom | head -c "$length"
+  else
+    echo "Please provide a valid number for length."
+    exit 1
+  fi
+}
+
+generate_uid "$@"

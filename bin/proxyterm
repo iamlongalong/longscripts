@@ -1,0 +1,9 @@
+#!/bin/bash
+
+LONG_ENV_PROXY_FILE=${LONG_ENV_PROXY_FILE:-$HOME/.scripts/envs/proxyenv}
+
+if [[ -f $LONG_ENV_PROXY_FILE ]]; then
+  . "$LONG_ENV_PROXY_FILE"
+fi
+
+exec "$SHELL"
