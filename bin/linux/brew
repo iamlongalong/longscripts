@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo -e "INFO: this is a brew wrapper\n"
+cmd="/home/linuxbrew/.linuxbrew/bin/brew $@"
+echo "$cmd"
+su - linuxbrew -c "$cmd"
+
+echo -e "\nINFO: finish wrap brew"

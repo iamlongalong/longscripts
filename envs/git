@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##########GIT_ALIAS###########
+alias gac="git a . && git cim "
+alias gpl="git pull"
+alias gps="git push"
+##########GIT_ALIAS###########
